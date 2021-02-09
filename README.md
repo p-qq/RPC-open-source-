@@ -1,3 +1,7 @@
+# ALSO DON'T FUCKING BLAME ME FOR IT LOOKING TRASH... I WHIPPED IT UP IN A FEW MINUTES I WOULD MAKE IT BETTER BUT I AM BUSY ATM...
+
+
+
 # RPC
 Open Source RPC just so yall actually know it isn't a logger
 Just an RPC i made out of bordem. Also, It when you click the boxs it won't work on your side, but if somebody else clicks them it'll redirct them to the link.
