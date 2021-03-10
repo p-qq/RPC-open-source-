@@ -9,10 +9,18 @@ const r = chalk.hex('#F04747');
 const white = chalk.hex('#FFFFFF');
 const p = chalk.hex('#F6B0F2')
 const w = chalk.hex('#FFFFFF')
-var setTitle = require('console-title');
-setTitle('$KADADDLE RPC')
 
 
+
+const letters = ['$ ', 'K ', 'A ', 'D ', 'A ', 'D ', 'D ', 'L ', 'E'];
+let pusher = "";
+letters.forEach((l, i) => {
+    setTimeout(() => {
+        pusher += l;
+        process.title = pusher;
+        console.log(`Cooldown: ${i * 75}ms`)
+    }, i * 75);
+})
 let date = new Date();
 let hours = date.getUTCHours().toString().padStart(2, '0');
 let minutes = date.getUTCMinutes().toString().padStart(2, '0');
@@ -99,8 +107,8 @@ client.on('ready', () => {
                 assets : {
                     small_text : Nimage,
                     small_image : SImage,
-                    large_image : ImageN,
-                    large_text : LImage
+                    large_image : LImage,
+                    large_text : Nimage
                     },
 buttons : [{label : Box1 , url : `${link1}`},{label : Box2 ,url : `${link2}`}]
 }
