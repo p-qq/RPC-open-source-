@@ -18,7 +18,6 @@ letters.forEach((l, i) => {
     setTimeout(() => {
         pusher += l;
         process.title = pusher;
-        console.log(`Cooldown: ${i * 75}ms`)
     }, i * 75);
 })
 let date = new Date();
